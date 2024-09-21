@@ -19,9 +19,10 @@ type Human = {
 };
 
 type Employee = Human & {
+  //Extendable only this way
   age: number;
 };
 
-type Employee = {
-  //Not extendable throws an error
-};
+// type Employee = {
+//   Not extendable throws an error
+// };
