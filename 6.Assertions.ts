@@ -15,3 +15,4 @@ const user: IUser = {
 user.authroize("password");
 
 localStorage.setItem("token", user.token!); // ! mark specifies that user.token is not undefined or null
+localStorage.setItem("token", user.token as string); // 'as' mark specifies that user.token is string
