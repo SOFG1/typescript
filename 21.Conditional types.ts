@@ -8,6 +8,12 @@ interface Dog extends Animal {
 
 type Example1 = Dog extends Animal ? number : string;
 
+///
+///
+///
+///
+///
+
 //Example 2
 type IdLabel = {
   id: number;
@@ -31,3 +37,23 @@ function createLabel<T extends number | string>(idOrName: T): NameOrId<T> {
 let a = createLabel("typescript");
 
 let b = createLabel(2.8);
+
+///
+///
+///
+///
+///
+
+//Extract message from an object
+type MessageOf<T> = T extends { message: unknown } ? T["message"] : never;
+
+///
+///
+///
+///
+///
+
+//Flaten
+type Flatten<T> = T extends any[] ? T[number] : T;
+type Str = Flatten<string[]>;
+type Num = Flatten<number>;
