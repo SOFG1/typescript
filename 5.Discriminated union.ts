@@ -1,9 +1,11 @@
+//Incorrect usage
 interface Shape {
   kind: "circle" | "square";
   radius?: number;
   sideLength?: number;
 }
 
+//Correct
 interface Circle {
   kind: "circle";
   radius: number;
