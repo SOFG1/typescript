@@ -32,7 +32,6 @@ function myForEach(
   }
 }
 
-myForEach([1, 2, 3, 4], (item, i) => {
-  console.log(item, i.toString());
-  return 213;
+myForEach([1, 2, 3, 4], (item) => {
+  console.log(item);
 });

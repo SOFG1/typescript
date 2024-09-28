@@ -8,7 +8,7 @@ declare function create<
   T extends HTMLElement = HTMLDivElement,
   U extends HTMLElement[] = T[]
 >(element: T, child: U): Container<T, U>;
-create(document.createElement("div"), [document.createElement("section")]);
+create(document.createElement("form"), [document.createElement("div")]);
 
 //
 //

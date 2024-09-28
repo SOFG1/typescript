@@ -10,10 +10,6 @@ type Flatten2<Type> = Type extends Array<infer T> ? T : Type;
 type Str2 = Flatten2<string[]>;
 type Num2 = Flatten2<number>;
 
-type MyObj<T> = {
-  value: T;
-};
-
 //
 //
 //
@@ -29,3 +25,5 @@ type GetReturnType<Type> = Type extends (...args: never[]) => infer Return
 
 //Tuple with infer
 type GetTupleFirst<T> = T extends [infer First, ...any[]] ? First : never;
+
+type First = GetTupleFirst<[1, 2]>;

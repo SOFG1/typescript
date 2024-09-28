@@ -54,6 +54,6 @@ type MessageOf<T> = T extends { message: unknown } ? T["message"] : never;
 ///
 
 //Flaten
-type Flatten<T> = T extends any[] ? T[number] : T;
+type Flatten<T> = T extends unknown[] ? T[number] : T;
 type Str = Flatten<string[]>;
 type Num = Flatten<number>;
