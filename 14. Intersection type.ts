@@ -1,6 +1,7 @@
 interface Colorful {
   color: string;
 }
+
 interface Square {
   area: number;
 }

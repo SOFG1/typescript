@@ -2,6 +2,7 @@
 interface Animal {
   live(): void;
 }
+
 interface Dog extends Animal {
   woof(): void;
 }
